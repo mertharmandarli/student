@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="353c8454bedd4cc284c9cac5f8a80ed8" Name="Diagram1">
+        <EntityTypeShape EntityType="calisma_DBFirst_OgrBilgiSistemiModel.Bolumler" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="calisma_DBFirst_OgrBilgiSistemiModel.Kan_Grubu_Bilgi" Width="1.5" PointX="5.375" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="calisma_DBFirst_OgrBilgiSistemiModel.Student" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="calisma_DBFirst_OgrBilgiSistemiModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="calisma_DBFirst_OgrBilgiSistemiModel.FK_Student_Bolumler" ManuallyRouted="false" />
+        <AssociationConnector Association="calisma_DBFirst_OgrBilgiSistemiModel.FK_Student_Kan_Grubu_Bilgi" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

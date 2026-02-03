@@ -56,7 +56,7 @@ Dynamic UI: Interactive elements like ComboBoxes populated directly from the dat
 🚀 Kurulum ve Çalıştırma / Installation & Setup
 🇹🇷 Türkçe Talimatlar:
 
-Depoyu Klonlayın: git clone https://github.com/mertharmandarli/proje-adi.git
+Depoyu Klonlayın: git clone https://github.com/mertharmandarli/student.git
 
 Veritabanı Yapılandırması: SQL Server üzerinde veritabanınızı oluşturun ve Entity Framework Designer üzerinden bağlantıyı güncelleyin.
 
@@ -66,7 +66,7 @@ Bağlantı Ayarları: App.config dosyasındaki connectionString kısmını kendi
 
 🇺🇸 English Instructions:
 
-Clone the Repository: Use git clone https://github.com/mertharmandarli/project-name.git
+Clone the Repository: Use git clone https://github.com/mertharmandarli/student.git
 
 Database Configuration: Create your database in SQL Server and update the connection via Entity Framework Designer.
 

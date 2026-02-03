@@ -56,7 +56,7 @@ Dynamic UI: Interactive elements like ComboBoxes populated directly from the dat
 🚀 Kurulum ve Çalıştırma / Installation & Setup
 🇹🇷 Türkçe Talimatlar:
 
-Depoyu Klonlayın: git clone https://github.com/kullaniciadi/proje-adi.git
+Depoyu Klonlayın: git clone https://github.com/mertharmandarli/proje-adi.git
 
 Veritabanı Yapılandırması: SQL Server üzerinde veritabanınızı oluşturun ve Entity Framework Designer üzerinden bağlantıyı güncelleyin.
 
@@ -66,7 +66,7 @@ Bağlantı Ayarları: App.config dosyasındaki connectionString kısmını kendi
 
 🇺🇸 English Instructions:
 
-Clone the Repository: Use git clone https://github.com/username/project-name.git
+Clone the Repository: Use git clone https://github.com/mertharmandarli/project-name.git
 
 Database Configuration: Create your database in SQL Server and update the connection via Entity Framework Designer.
 
@@ -80,3 +80,6 @@ Run the App: Open the project in Visual Studio, Build the solution, and click St
 🇺🇸 This project was developed based on Murat Yücedağ's "C# Bootcamp" playlist.
 
 Not / Note: 🇹🇷 Bu uygulamada kullanılan tüm kişisel veriler test amaçlı rastgele oluşturulmuştur. 🇺🇸 All personal data used in this application are randomly generated for testing purposes.
+
+Ekran Görüntüleri (Screen Shots):
+<img width="1359" height="514" alt="görsel_2026-02-03_135240630" src="https://github.com/user-attachments/assets/0fdcde19-4010-4132-be6e-e71085cabab0" />

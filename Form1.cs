@@ -91,6 +91,10 @@ namespace WindowsFormsApp2
                 {
                     ((ComboBox)item).SelectedIndex = -1; 
                 }
+                if (item is DateTimePicker)
+                {
+                    ((DateTimePicker)item).Value = DateTime.Now; 
+                }
             }
         }
 
@@ -154,6 +158,7 @@ namespace WindowsFormsApp2
         private void btnList_Click(object sender, EventArgs e)
         {
             VerileriListele();
+            AlanlariTemizle();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -275,10 +280,33 @@ namespace WindowsFormsApp2
             }
 
             id = int.Parse(txtOgrNumber.Text);
-            var values = db.Student.Where(x => x.ogr_ID == id).ToList();
+
+            var values = db.Student
+                .Where(x => x.ogr_ID == id)
+                .Select(x => new  
+                {
+                    x.ogr_ID,
+                    x.ogr_Name,
+                    x.ogr_Surname,
+                    Bölüm = x.Bolumler.bolum_Adı,
+                    KanGrubu = x.Kan_Grubu_Bilgi.Kan_Grubu,
+                    x.ogr_Tc,
+                    x.ogr_Dogum_Tarihi
+                })
+                .ToList();
+
             dataGridView1.DataSource = values;
 
-            AlanlariTemizle();
+            var fillBoxes = db.Student.Find(id);
+
+            txtOgrName.Text = Student.ReferenceEquals(fillBoxes, null) ? string.Empty : fillBoxes.ogr_Name;
+            txtOgrSurname.Text = Student.ReferenceEquals(fillBoxes, null) ? string.Empty : fillBoxes.ogr_Surname;
+            cmbBloodType.SelectedValue = Student.ReferenceEquals(fillBoxes, null) ? -1 : fillBoxes.ogr_Kan_Grubu_ID;
+            cmbOgrFaculty.SelectedValue = Student.ReferenceEquals(fillBoxes, null) ? -1 : fillBoxes.ogr_Bolum_ID;
+            txtOgrTc.Text = Student.ReferenceEquals(fillBoxes, null) ? string.Empty : fillBoxes.ogr_Tc;
+            dtBirthday.Text = Student.ReferenceEquals(fillBoxes, null) ? string.Empty : fillBoxes.ogr_Dogum_Tarihi;
+
+
         }
     }
 }
